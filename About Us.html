@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<title>ABOUT ME</title>
+<link rel = "stylesheet" href="about us.css">
+</head>
+																	  
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#">MyPortfolio</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About Us.html">About</a></li>
+            <li><a href="Process.html">Process</a></li>
+            <li><a href="Works.html">Works</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>							 
+	<section class="contact">
+	   <div class="content">
+		 <h1>ABOUT</h1>
+</div>
+		<div class="container">
+		   <div class="contactInfo">
+		     <div class="box">
+				 <div class="icon"></i></div>
+				<div class="text">
+					<h3>HTML & CSS</h3>
+					<p>85 %</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"></div>
+				<div class="text">
+					<h3>JAVA</h3>
+					<p>80 %</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"></i></div>
+				<div class="text">
+					<h3>JAVASCRIPT</h3>
+					<p>75 %</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"></i></div>
+				<div class="text">
+					<h3>PHP</h3>
+					<p>70 %</p>
+				</div>
+			</div>							 
+		</div>
+		<div class="contactForm">
+			<h2>ABOUT ME</h2>
+            <br>
+            <br>
+            <p> Hi ! My name is Nurin Syafiqa Binti Mohd Fadzle. I'm student and I'm currently studying for a degree in Sciene Computer at UiTM Chendering, Kuala Terengganu.
+             Now I'm in semester 4 and have 1 year and a half to finish my degree. </p>
+	 </div>
+</section>
+ <section>
+	<!--------footer---------->
+	<div class="footer">
+		<p>Copyright© 2021. All Right Reserved.<br> Design by NURIN SYAFIQA BINTI MOHD FADZLE</p>
+	</div>
+</section>	
+
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>

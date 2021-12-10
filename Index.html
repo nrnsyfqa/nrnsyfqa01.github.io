@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NURIN SYAFIQA</title>
+    <link rel="stylesheet" href="https://www.codeithub.com/responsive-sticky-navigation-bar-html-css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">MyPortfolio</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About Us.html">About</a></li>
+        <li><a href="Process.html">Process</a></li>
+        <li><a href="Works.html">Works</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="wd">
+    <br>
+    <h1> NURIN SYAFIQA </h1>
+    <br>
+    <img src="profile.jpg" alt="profile" style="width:200px;height:220px;";>
+    <br>
+    <br>
+    <a href="#" class="fa fa-map-marker"></a>
+    <br>
+    <h4>Pt3231, Jln. Sek. Keb. Seribong, Kg.Jelutong, 16150 Kota Bharu, Kelantan</h4>
+    <a href="#" class="fa fa-phone"></a>
+    <h4>017-5900651</h4>
+    <a href="#" class="fa fa-envelope"></a>
+    <h4>nrnsyfqa0304@gmail.com</h4>
+    <br>
+    <h3>Academic Info</h3>
+    <ul>
+        <li>SPM (2013-2017)</li>
+        <li>Diploma in Science Computer (2018-2020)</li>
+        <li>Degree in Science Computer (2021-until now)</li>
+
+    </ul>	
+</div>
+<section>
+<!--------footer---------->
+<div class="footer">
+    <p>Copyright© 2021. All Right Reserved. <br>Design by NURIN SYAFIQA BINTI MOHD FADZLE</p>
+</div>
+</section>		
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
